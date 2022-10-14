@@ -84,4 +84,5 @@ with demo:
                       max1, min1], outputs=[op, op2])
         submit2.click(fn=fn, inputs=[text2, rad3,
                       max2, min2], outputs=[op, op2])
+demo.queue()
 demo.launch(server_port=8080, server_name='0.0.0.0') # Launch the gradio block
