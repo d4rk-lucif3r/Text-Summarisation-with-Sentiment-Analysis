@@ -11,6 +11,10 @@ This project aims to summarise text and provide a sentiment analysis of the text
 
 ```python app.py```
 
+## Deployment on TrueFoundry
+
+```python deploy.py```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
