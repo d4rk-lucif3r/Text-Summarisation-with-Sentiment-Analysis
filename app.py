@@ -1,11 +1,12 @@
 import gradio as gr
-from articles import *
 from transformers import pipeline
+
+from articles import *
 
 
 def summarise(text, max_length=130, min_length=30, model='facebook/bart-large-cnn'):
     summarizer = pipeline("summarization", model=model)
-    result = summarizer(text, max_length=max_length, min_length=min_length)
+    result = summarizer(text, max_length=int(max_length), min_length=int(min_length))
     sent_analysis = pipeline(
         "sentiment-analysis", model="finiteautomata/bertweet-base-sentiment-analysis")
     sent = sent_analysis(result[0]['summary_text'])[0]
