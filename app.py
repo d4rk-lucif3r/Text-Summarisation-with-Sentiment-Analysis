@@ -85,5 +85,10 @@ with demo:
                       max1, min1], outputs=[op, op2])
         submit2.click(fn=fn, inputs=[text2, rad3,
                       max2, min2], outputs=[op, op2])
+        gr.Markdown("### Made with ❤️ by Arsh using TrueFoundry's Gradio Deployment")
+        gr.Markdown(
+            "### [Github Repo](https://github.com/d4rk-lucif3r/Text-Summarisation-with-Sentiment-Analysis)")
+        gr.Markdown(
+            '### [Blog](https://lucif3r4.medium.com/summarizing-text-with-transformers-and-deploying-it-as-gradio-app-d96cc11cbf01)')
 demo.queue()
 demo.launch(server_port=8080, server_name='0.0.0.0') # Launch the gradio block

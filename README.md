@@ -32,5 +32,5 @@ MIT License
 
 ## Blog
 
-Link to be added soon
-<!-- [Medium]() -->
+![Medium Blog](https://lucif3r4.medium.com/summarizing-text-with-transformers-and-deploying-it-as-gradio-app-d96cc11cbf01)
+
