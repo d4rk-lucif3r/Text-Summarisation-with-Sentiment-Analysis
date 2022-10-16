@@ -2,3 +2,4 @@ gradio
 transformers
 tensorflow
 emoji==0.6.0
+servicefoundry
